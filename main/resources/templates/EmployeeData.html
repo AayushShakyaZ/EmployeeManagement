@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html xmlns:th = "http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Employee List</title>
+</head>
+<body>
+
+<h1> Employees List</h1>
+<hr>
+
+<table>
+<thead>
+
+</thead>
+<tbody>
+<tr th:each="emp: ${elist}">
+
+<td th:text="${emp.fname +'  '+ emp.lname}"></td>
+<td>[[${emp.companyName}]]</td>
+<td th:text="${emp.post}"></td>
+<td >[[${emp.address.country}]]</td>
+<td th:text="${emp.address.city}"></td>
+<td >[[${emp.address.state}]]</td>
+
+<td>
+ <a th:href="@{/edit?(id=${emp.id})}"><input type="submit" value="Edit"></a>
+ <a th:href="@{/delete?(id=${emp.id})}"><input type="submit" value="Delete"></a>
+</td>
+
+
+</tr>
+</tbody>
+
+
+
+</table>
+
+
+</body>
+</html>

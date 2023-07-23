@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>employee</title>
+<link
+	href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+	rel="stylesheet">
+
+</head>
+<body>
+
+	<div class="container">
+
+		<div class="card">
+
+			<div class="card-header text-center text-white bg-primary fs-3">
+				Employee form</div>
+			<div class="card-body">
+
+				<form action="/employee" method="post">
+
+					<div class="row">
+						<div class="p-3 col-4">FIrstname</div>
+						<div class="col-6">
+							<input type="text" name="fname" class="form-control">
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="p-3 col-4">Lastname</div>
+						<div class="col-6">
+							<input type="text" name="lname" class="form-control">
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="p-3 col-4">gender</div>
+						<div class="col-6">
+							<input type="radio" name="gender" value="male">Male <input
+								type="radio" name="gender" value="female">Female
+						</div>
+					</div>
+
+
+
+					<div class="row">
+						<div class="p-3 col-4">Company</div>
+						<div class="col-6">
+							<input type="text" name="companyName" class="form-control">
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="p-3 col-4">Post</div>
+						<div class="col-6">
+							<input type="text" name="post" class="form-control">
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="p-3 col-4">country</div>
+						<div class="col-6">
+							<input type="text" name="address.country" class="form-control">
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="p-3 col-4">City</div>
+						<div class="col-6">
+							<input type="text" name="address.city" class="form-control">
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="p-3 col-4">state</div>
+						<div class="col-6">
+							<select name="address.state" class="form-control">
+
+								<option value="">select</option>
+								<option value="state1">state-1</option>
+								<option value="state2">state-2</option>
+								<option value="state3">state-3</option>
+								<option value="state4">state-4</option>
+								<option value="state5">state-5</option>
+							</select>
+						</div>
+					</div>
+
+
+					<div class="row">
+						<div class="p-3 col-4">submit</div>
+						<div class="col-6">
+							<input type="submit" value="Save" class="btn btn-success">
+						</div>
+
+					</div>
+				</form>
+
+				<div class="card-footer text-center text-white bg-warning fs-4">copyright@2023</div>
+			</div>
+
+		</div>
+	</div>
+
+</body>
+</html>
